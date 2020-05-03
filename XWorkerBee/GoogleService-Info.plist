@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>302952485782-fag3v8qlthee3cedpp9g5uvrunub1kdp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.302952485782-fag3v8qlthee3cedpp9g5uvrunub1kdp</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>302952485782-icdmu8lf5id2ugrc3f4i83qgum4fs1t7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAsIXD_yguMWV24vSnxDJNSsI90zOq879c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>302952485782</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.xep.vn.xworkerbee</string>
+	<key>PROJECT_ID</key>
+	<string>xworkerbee-952a8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>xworkerbee-952a8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:302952485782:ios:958c1829537cc3317443b7</string>
+	<key>DATABASE_URL</key>
+	<string>https://xworkerbee-952a8.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,1184 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34B597D621589A27B02C99D7 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48BEBEACF2FD02E3DF59423 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */; };
+		4C95D9FCEA5AAE4E235EED52 /* Pods_XWorkerBeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1535FF5DE03A2716B9879E11 /* Pods_XWorkerBeeUITests.framework */; };
+		52055799236D9A7D00507025 /* NextScheduleOfStaff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52055798236D9A7D00507025 /* NextScheduleOfStaff.swift */; };
+		529D6458245E825700FEC50B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 529D6457245E825700FEC50B /* GoogleService-Info.plist */; };
+		52F0D7462377074F00D4EC11 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0D7442377074F00D4EC11 /* NotificationCell.swift */; };
+		52F0D7472377074F00D4EC11 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F0D7452377074F00D4EC11 /* NotificationCell.xib */; };
+		6425F36C225AD3780026D4B9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6425F36B225AD3780026D4B9 /* NotificationService.swift */; };
+		6425F370225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6425F369225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		642E8F4522642DA500BAB322 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E8F4422642DA500BAB322 /* TestViewController.swift */; };
+		6430418E220D3EF900A0404C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430418D220D3EF900A0404C /* AppDelegate.swift */; };
+		64304193220D3EF900A0404C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64304191220D3EF900A0404C /* Main.storyboard */; };
+		64304195220D3EFA00A0404C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64304194220D3EFA00A0404C /* Assets.xcassets */; };
+		64304198220D3EFA00A0404C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64304196220D3EFA00A0404C /* LaunchScreen.storyboard */; };
+		643041A3220D3EFA00A0404C /* XWorkerBeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041A2220D3EFA00A0404C /* XWorkerBeeTests.swift */; };
+		643041AE220D3EFA00A0404C /* XWorkerBeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041AD220D3EFA00A0404C /* XWorkerBeeUITests.swift */; };
+		643041BE220D3F7C00A0404C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041BD220D3F7C00A0404C /* MainTabBarController.swift */; };
+		643041C2220D3FC200A0404C /* DayOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041C1220D3FC200A0404C /* DayOffViewController.swift */; };
+		643041C4220D3FD200A0404C /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041C3220D3FD200A0404C /* ChangePassViewController.swift */; };
+		643041C6220D463D00A0404C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041C5220D463D00A0404C /* Utils.swift */; };
+		643041C8220D47A200A0404C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041C7220D47A200A0404C /* Constant.swift */; };
+		643041CE220D7ED200A0404C /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041CD220D7ED200A0404C /* RequestManager.swift */; };
+		643041D1220D805D00A0404C /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643041CF220D805D00A0404C /* NetworkViewController.swift */; };
+		64353F0122151395000B0498 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64353F0022151395000B0498 /* GradientView.swift */; };
+		643CD08A220F2A7100C92C8A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643CD089220F2A7000C92C8A /* CoreLocation.framework */; };
+		6448EBCD2244C4F400AAB9C5 /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6448EBCC2244C4F400AAB9C5 /* UILabelPadding.swift */; };
+		644DF093224C5828003A9BA2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644DF092224C5828003A9BA2 /* Extensions.swift */; };
+		644DF095224C72AA003A9BA2 /* LateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644DF094224C72AA003A9BA2 /* LateViewController.swift */; };
+		649981CF224F8BDB00534373 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649981CE224F8BDB00534373 /* TableViewCell.swift */; };
+		64A3226E225D7D7C0087A475 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3226D225D7D7C0087A475 /* NotificationViewController.swift */; };
+		64A32270225DE7810087A475 /* BadgeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3226F225DE7810087A475 /* BadgeBarButtonItem.swift */; };
+		64A7EDEF221A9A0E00FE846F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7EDEE221A9A0E00FE846F /* ReportViewController.swift */; };
+		64B7C152224B0DB2008F2511 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C151224B0DB2008F2511 /* MenuViewController.swift */; };
+		64B7C154224B1069008F2511 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C153224B1069008F2511 /* MainViewController.swift */; };
+		64B7C156224B1088008F2511 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C155224B1088008F2511 /* BaseViewController.swift */; };
+		64B7C158224B1B53008F2511 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C157224B1B53008F2511 /* MenuTableViewCell.swift */; };
+		64B7C15C224B3480008F2511 /* SharedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C15B224B3480008F2511 /* SharedClass.swift */; };
+		64B7C15E224B39BA008F2511 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C15D224B39BA008F2511 /* LoginViewController.swift */; };
+		64B7C160224B6A3E008F2511 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7C15F224B6A3E008F2511 /* MenuModel.swift */; };
+		64D17D7222117160002A13B7 /* FTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D17D7122117160002A13B7 /* FTPUpload.swift */; };
+		64E006B922126E9300A897A1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E006B822126E9300A897A1 /* CameraViewController.swift */; };
+		64E6656F2258A20900C3F5E9 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64E6656D2258A20900C3F5E9 /* Data.xcdatamodeld */; };
+		64E665712258A31500C3F5E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E665702258A31500C3F5E9 /* DataManager.swift */; };
+		93048D71236BDEE300163DF6 /* ExtensionTimePickingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93048D6F236BDEE200163DF6 /* ExtensionTimePickingVC.swift */; };
+		93048D72236BDEE300163DF6 /* TimePickingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93048D70236BDEE200163DF6 /* TimePickingViewController.swift */; };
+		9CA9013A35CD9E10231B1393 /* Pods_XWorkerBeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B57A962CDE16B3F8398E7D2 /* Pods_XWorkerBeeTests.framework */; };
+		E8910B52BD0E412B2F348A5A /* Pods_XWorkerBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E16D3B8D1B0B27708B1652F /* Pods_XWorkerBee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6425F36E225AD3780026D4B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64304182220D3EF900A0404C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6425F368225AD3780026D4B9;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+		6430419F220D3EFA00A0404C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64304182220D3EF900A0404C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64304189220D3EF900A0404C;
+			remoteInfo = XWorkerBee;
+		};
+		643041AA220D3EFA00A0404C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64304182220D3EF900A0404C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64304189220D3EF900A0404C;
+			remoteInfo = XWorkerBee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6473FD922259CC9D00A72A49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6425F370225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1535FF5DE03A2716B9879E11 /* Pods_XWorkerBeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E16D3B8D1B0B27708B1652F /* Pods_XWorkerBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B177FE569A34158718C508 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee-OneSignalNotificationServiceExtension/Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		52055798236D9A7D00507025 /* NextScheduleOfStaff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScheduleOfStaff.swift; sourceTree = "<group>"; };
+		529D6457245E825700FEC50B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52F0D7442377074F00D4EC11 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		52F0D7452377074F00D4EC11 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		58E8C07FA9DEE91647730513 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee-OneSignalNotificationServiceExtension/Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		60826C905BFA66C8DF89DB5D /* Pods-XWorkerBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee.release.xcconfig"; sourceTree = "<group>"; };
+		6425F369225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6425F36B225AD3780026D4B9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		6425F36D225AD3780026D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642E8F4422642DA500BAB322 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		6430418A220D3EF900A0404C /* XWorkerBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWorkerBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6430418D220D3EF900A0404C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64304192220D3EF900A0404C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64304194220D3EFA00A0404C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64304197220D3EFA00A0404C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64304199220D3EFA00A0404C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6430419E220D3EFA00A0404C /* XWorkerBeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWorkerBeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		643041A2220D3EFA00A0404C /* XWorkerBeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWorkerBeeTests.swift; sourceTree = "<group>"; };
+		643041A4220D3EFA00A0404C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643041A9220D3EFA00A0404C /* XWorkerBeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWorkerBeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		643041AD220D3EFA00A0404C /* XWorkerBeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWorkerBeeUITests.swift; sourceTree = "<group>"; };
+		643041AF220D3EFA00A0404C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643041BD220D3F7C00A0404C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		643041C1220D3FC200A0404C /* DayOffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOffViewController.swift; sourceTree = "<group>"; };
+		643041C3220D3FD200A0404C /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		643041C5220D463D00A0404C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		643041C7220D47A200A0404C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		643041CD220D7ED200A0404C /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		643041CF220D805D00A0404C /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		64353F0022151395000B0498 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		643CD089220F2A7000C92C8A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6448EBCC2244C4F400AAB9C5 /* UILabelPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
+		644DF092224C5828003A9BA2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		644DF094224C72AA003A9BA2 /* LateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateViewController.swift; sourceTree = "<group>"; };
+		649981CE224F8BDB00534373 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		64A3226D225D7D7C0087A475 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		64A3226F225DE7810087A475 /* BadgeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBarButtonItem.swift; sourceTree = "<group>"; };
+		64A7EDEE221A9A0E00FE846F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		64B7C151224B0DB2008F2511 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		64B7C153224B1069008F2511 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		64B7C155224B1088008F2511 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		64B7C157224B1B53008F2511 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		64B7C15B224B3480008F2511 /* SharedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedClass.swift; sourceTree = "<group>"; };
+		64B7C15D224B39BA008F2511 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		64B7C15F224B6A3E008F2511 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		64D17D7122117160002A13B7 /* FTPUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPUpload.swift; sourceTree = "<group>"; };
+		64E006B822126E9300A897A1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		64E6656B2258A17700C3F5E9 /* XWorkerBee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XWorkerBee.entitlements; sourceTree = "<group>"; };
+		64E6656E2258A20900C3F5E9 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		64E665702258A31500C3F5E9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		662CD8581CF42CF62238B07F /* Pods-XWorkerBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee.debug.xcconfig"; sourceTree = "<group>"; };
+		6B57A962CDE16B3F8398E7D2 /* Pods_XWorkerBeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C284210A6B18689260BABE2 /* Pods-XWorkerBeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeUITests/Pods-XWorkerBeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7017A7A45F3D3BA16E6B7184 /* Pods-XWorkerBeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeTests/Pods-XWorkerBeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		93048D6F236BDEE200163DF6 /* ExtensionTimePickingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTimePickingVC.swift; sourceTree = "<group>"; };
+		93048D70236BDEE200163DF6 /* TimePickingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickingViewController.swift; sourceTree = "<group>"; };
+		B0694339991C4C2B871FC6BE /* Pods-XWorkerBeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeUITests/Pods-XWorkerBeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A3194DA5F7BC4AE926F5A3 /* Pods-XWorkerBeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeTests/Pods-XWorkerBeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E48BEBEACF2FD02E3DF59423 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6425F366225AD3780026D4B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B597D621589A27B02C99D7 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64304187220D3EF900A0404C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643CD08A220F2A7100C92C8A /* CoreLocation.framework in Frameworks */,
+				E8910B52BD0E412B2F348A5A /* Pods_XWorkerBee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6430419B220D3EFA00A0404C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA9013A35CD9E10231B1393 /* Pods_XWorkerBeeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643041A6220D3EFA00A0404C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C95D9FCEA5AAE4E235EED52 /* Pods_XWorkerBeeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A490BD13A9AC03A1316724F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				662CD8581CF42CF62238B07F /* Pods-XWorkerBee.debug.xcconfig */,
+				60826C905BFA66C8DF89DB5D /* Pods-XWorkerBee.release.xcconfig */,
+				D6A3194DA5F7BC4AE926F5A3 /* Pods-XWorkerBeeTests.debug.xcconfig */,
+				7017A7A45F3D3BA16E6B7184 /* Pods-XWorkerBeeTests.release.xcconfig */,
+				B0694339991C4C2B871FC6BE /* Pods-XWorkerBeeUITests.debug.xcconfig */,
+				6C284210A6B18689260BABE2 /* Pods-XWorkerBeeUITests.release.xcconfig */,
+				46B177FE569A34158718C508 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				58E8C07FA9DEE91647730513 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52055797236D9A4900507025 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52055798236D9A7D00507025 /* NextScheduleOfStaff.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52F0D7432377072600D4EC11 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52F0D7442377074F00D4EC11 /* NotificationCell.swift */,
+				52F0D7452377074F00D4EC11 /* NotificationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		52F0D7482377129200D4EC11 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				52F0D7432377072600D4EC11 /* Cell */,
+				64A3226D225D7D7C0087A475 /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		6425F36A225AD3780026D4B9 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6425F36B225AD3780026D4B9 /* NotificationService.swift */,
+				6425F36D225AD3780026D4B9 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		64304181220D3EF900A0404C = {
+			isa = PBXGroup;
+			children = (
+				6430418C220D3EF900A0404C /* XWorkerBee */,
+				643041A1220D3EFA00A0404C /* XWorkerBeeTests */,
+				643041AC220D3EFA00A0404C /* XWorkerBeeUITests */,
+				6425F36A225AD3780026D4B9 /* OneSignalNotificationServiceExtension */,
+				6430418B220D3EF900A0404C /* Products */,
+				4A490BD13A9AC03A1316724F /* Pods */,
+				FF16DDE9AD916D06554BEF6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6430418B220D3EF900A0404C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6430418A220D3EF900A0404C /* XWorkerBee.app */,
+				6430419E220D3EFA00A0404C /* XWorkerBeeTests.xctest */,
+				643041A9220D3EFA00A0404C /* XWorkerBeeUITests.xctest */,
+				6425F369225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6430418C220D3EF900A0404C /* XWorkerBee */ = {
+			isa = PBXGroup;
+			children = (
+				64A3226C225D7D010087A475 /* Resources */,
+				64E6656C2258A1F100C3F5E9 /* Data */,
+				64E6656B2258A17700C3F5E9 /* XWorkerBee.entitlements */,
+				52055797236D9A4900507025 /* Model */,
+				643041BC220D3F4100A0404C /* Commons */,
+				643041BB220D3F3200A0404C /* ViewControllers */,
+				6430418D220D3EF900A0404C /* AppDelegate.swift */,
+				64304199220D3EFA00A0404C /* Info.plist */,
+				64B7C153224B1069008F2511 /* MainViewController.swift */,
+				529D6457245E825700FEC50B /* GoogleService-Info.plist */,
+				64B7C155224B1088008F2511 /* BaseViewController.swift */,
+				64B7C157224B1B53008F2511 /* MenuTableViewCell.swift */,
+				64B7C151224B0DB2008F2511 /* MenuViewController.swift */,
+				64B7C15B224B3480008F2511 /* SharedClass.swift */,
+				64B7C15D224B39BA008F2511 /* LoginViewController.swift */,
+				64B7C15F224B6A3E008F2511 /* MenuModel.swift */,
+				642E8F4422642DA500BAB322 /* TestViewController.swift */,
+			);
+			path = XWorkerBee;
+			sourceTree = "<group>";
+		};
+		643041A1220D3EFA00A0404C /* XWorkerBeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				643041A2220D3EFA00A0404C /* XWorkerBeeTests.swift */,
+				643041A4220D3EFA00A0404C /* Info.plist */,
+			);
+			path = XWorkerBeeTests;
+			sourceTree = "<group>";
+		};
+		643041AC220D3EFA00A0404C /* XWorkerBeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				643041AD220D3EFA00A0404C /* XWorkerBeeUITests.swift */,
+				643041AF220D3EFA00A0404C /* Info.plist */,
+			);
+			path = XWorkerBeeUITests;
+			sourceTree = "<group>";
+		};
+		643041BB220D3F3200A0404C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				643041BD220D3F7C00A0404C /* MainTabBarController.swift */,
+				643041C1220D3FC200A0404C /* DayOffViewController.swift */,
+				643041C3220D3FD200A0404C /* ChangePassViewController.swift */,
+				93048D6D236BDEE200163DF6 /* TimePickingVC */,
+				643041CF220D805D00A0404C /* NetworkViewController.swift */,
+				64E006B822126E9300A897A1 /* CameraViewController.swift */,
+				64A7EDEE221A9A0E00FE846F /* ReportViewController.swift */,
+				644DF094224C72AA003A9BA2 /* LateViewController.swift */,
+				649981CE224F8BDB00534373 /* TableViewCell.swift */,
+				52F0D7482377129200D4EC11 /* Notification */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		643041BC220D3F4100A0404C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				643041C5220D463D00A0404C /* Utils.swift */,
+				643041C7220D47A200A0404C /* Constant.swift */,
+				643041CD220D7ED200A0404C /* RequestManager.swift */,
+				64D17D7122117160002A13B7 /* FTPUpload.swift */,
+				64353F0022151395000B0498 /* GradientView.swift */,
+				6448EBCC2244C4F400AAB9C5 /* UILabelPadding.swift */,
+				644DF092224C5828003A9BA2 /* Extensions.swift */,
+				64A3226F225DE7810087A475 /* BadgeBarButtonItem.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		64A3226C225D7D010087A475 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64304191220D3EF900A0404C /* Main.storyboard */,
+				64304194220D3EFA00A0404C /* Assets.xcassets */,
+				64304196220D3EFA00A0404C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		64E6656C2258A1F100C3F5E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				64E6656D2258A20900C3F5E9 /* Data.xcdatamodeld */,
+				64E665702258A31500C3F5E9 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		93048D6D236BDEE200163DF6 /* TimePickingVC */ = {
+			isa = PBXGroup;
+			children = (
+				93048D6E236BDEE200163DF6 /* ExtensionTimePickingVC */,
+				93048D70236BDEE200163DF6 /* TimePickingViewController.swift */,
+			);
+			path = TimePickingVC;
+			sourceTree = "<group>";
+		};
+		93048D6E236BDEE200163DF6 /* ExtensionTimePickingVC */ = {
+			isa = PBXGroup;
+			children = (
+				93048D6F236BDEE200163DF6 /* ExtensionTimePickingVC.swift */,
+			);
+			path = ExtensionTimePickingVC;
+			sourceTree = "<group>";
+		};
+		FF16DDE9AD916D06554BEF6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643CD089220F2A7000C92C8A /* CoreLocation.framework */,
+				1E16D3B8D1B0B27708B1652F /* Pods_XWorkerBee.framework */,
+				6B57A962CDE16B3F8398E7D2 /* Pods_XWorkerBeeTests.framework */,
+				1535FF5DE03A2716B9879E11 /* Pods_XWorkerBeeUITests.framework */,
+				E48BEBEACF2FD02E3DF59423 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6425F368225AD3780026D4B9 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6425F373225AD3780026D4B9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				25EBA14F4F7EA7592584A9A0 /* [CP] Check Pods Manifest.lock */,
+				6425F365225AD3780026D4B9 /* Sources */,
+				6425F366225AD3780026D4B9 /* Frameworks */,
+				6425F367225AD3780026D4B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 6425F369225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		64304189220D3EF900A0404C /* XWorkerBee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643041B2220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBee" */;
+			buildPhases = (
+				85D18A503644638F0954DAB5 /* [CP] Check Pods Manifest.lock */,
+				64304186220D3EF900A0404C /* Sources */,
+				64304187220D3EF900A0404C /* Frameworks */,
+				64304188220D3EF900A0404C /* Resources */,
+				28808B17DC139C2382BF59D8 /* [CP] Embed Pods Frameworks */,
+				6473FD922259CC9D00A72A49 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6425F36F225AD3780026D4B9 /* PBXTargetDependency */,
+			);
+			name = XWorkerBee;
+			productName = XWorkerBee;
+			productReference = 6430418A220D3EF900A0404C /* XWorkerBee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6430419D220D3EFA00A0404C /* XWorkerBeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643041B5220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBeeTests" */;
+			buildPhases = (
+				2E61E445AABE3BEE1B0DB940 /* [CP] Check Pods Manifest.lock */,
+				6430419A220D3EFA00A0404C /* Sources */,
+				6430419B220D3EFA00A0404C /* Frameworks */,
+				6430419C220D3EFA00A0404C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				643041A0220D3EFA00A0404C /* PBXTargetDependency */,
+			);
+			name = XWorkerBeeTests;
+			productName = XWorkerBeeTests;
+			productReference = 6430419E220D3EFA00A0404C /* XWorkerBeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		643041A8220D3EFA00A0404C /* XWorkerBeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643041B8220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBeeUITests" */;
+			buildPhases = (
+				8D9FD7A21C30C05F77AB133C /* [CP] Check Pods Manifest.lock */,
+				643041A5220D3EFA00A0404C /* Sources */,
+				643041A6220D3EFA00A0404C /* Frameworks */,
+				643041A7220D3EFA00A0404C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				643041AB220D3EFA00A0404C /* PBXTargetDependency */,
+			);
+			name = XWorkerBeeUITests;
+			productName = XWorkerBeeUITests;
+			productReference = 643041A9220D3EFA00A0404C /* XWorkerBeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64304182220D3EF900A0404C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = XEP;
+				TargetAttributes = {
+					6425F368225AD3780026D4B9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					64304189220D3EF900A0404C = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					6430419D220D3EFA00A0404C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 64304189220D3EF900A0404C;
+					};
+					643041A8220D3EFA00A0404C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 64304189220D3EF900A0404C;
+					};
+				};
+			};
+			buildConfigurationList = 64304185220D3EF900A0404C /* Build configuration list for PBXProject "XWorkerBee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64304181220D3EF900A0404C;
+			productRefGroup = 6430418B220D3EF900A0404C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64304189220D3EF900A0404C /* XWorkerBee */,
+				6430419D220D3EFA00A0404C /* XWorkerBeeTests */,
+				643041A8220D3EFA00A0404C /* XWorkerBeeUITests */,
+				6425F368225AD3780026D4B9 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6425F367225AD3780026D4B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64304188220D3EF900A0404C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64304198220D3EFA00A0404C /* LaunchScreen.storyboard in Resources */,
+				64304195220D3EFA00A0404C /* Assets.xcassets in Resources */,
+				529D6458245E825700FEC50B /* GoogleService-Info.plist in Resources */,
+				52F0D7472377074F00D4EC11 /* NotificationCell.xib in Resources */,
+				64304193220D3EF900A0404C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6430419C220D3EFA00A0404C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643041A7220D3EFA00A0404C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25EBA14F4F7EA7592584A9A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XWorkerBee-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28808B17DC139C2382BF59D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E61E445AABE3BEE1B0DB940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XWorkerBeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85D18A503644638F0954DAB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XWorkerBee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9FD7A21C30C05F77AB133C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XWorkerBeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6425F365225AD3780026D4B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6425F36C225AD3780026D4B9 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64304186220D3EF900A0404C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A7EDEF221A9A0E00FE846F /* ReportViewController.swift in Sources */,
+				643041C2220D3FC200A0404C /* DayOffViewController.swift in Sources */,
+				64D17D7222117160002A13B7 /* FTPUpload.swift in Sources */,
+				64353F0122151395000B0498 /* GradientView.swift in Sources */,
+				52055799236D9A7D00507025 /* NextScheduleOfStaff.swift in Sources */,
+				64E6656F2258A20900C3F5E9 /* Data.xcdatamodeld in Sources */,
+				64B7C156224B1088008F2511 /* BaseViewController.swift in Sources */,
+				6448EBCD2244C4F400AAB9C5 /* UILabelPadding.swift in Sources */,
+				643041C8220D47A200A0404C /* Constant.swift in Sources */,
+				644DF095224C72AA003A9BA2 /* LateViewController.swift in Sources */,
+				643041C4220D3FD200A0404C /* ChangePassViewController.swift in Sources */,
+				64B7C160224B6A3E008F2511 /* MenuModel.swift in Sources */,
+				64B7C15C224B3480008F2511 /* SharedClass.swift in Sources */,
+				64B7C15E224B39BA008F2511 /* LoginViewController.swift in Sources */,
+				93048D72236BDEE300163DF6 /* TimePickingViewController.swift in Sources */,
+				649981CF224F8BDB00534373 /* TableViewCell.swift in Sources */,
+				6430418E220D3EF900A0404C /* AppDelegate.swift in Sources */,
+				64A32270225DE7810087A475 /* BadgeBarButtonItem.swift in Sources */,
+				643041C6220D463D00A0404C /* Utils.swift in Sources */,
+				64E665712258A31500C3F5E9 /* DataManager.swift in Sources */,
+				643041D1220D805D00A0404C /* NetworkViewController.swift in Sources */,
+				64B7C152224B0DB2008F2511 /* MenuViewController.swift in Sources */,
+				643041CE220D7ED200A0404C /* RequestManager.swift in Sources */,
+				64B7C158224B1B53008F2511 /* MenuTableViewCell.swift in Sources */,
+				52F0D7462377074F00D4EC11 /* NotificationCell.swift in Sources */,
+				642E8F4522642DA500BAB322 /* TestViewController.swift in Sources */,
+				644DF093224C5828003A9BA2 /* Extensions.swift in Sources */,
+				64B7C154224B1069008F2511 /* MainViewController.swift in Sources */,
+				64A3226E225D7D7C0087A475 /* NotificationViewController.swift in Sources */,
+				93048D71236BDEE300163DF6 /* ExtensionTimePickingVC.swift in Sources */,
+				643041BE220D3F7C00A0404C /* MainTabBarController.swift in Sources */,
+				64E006B922126E9300A897A1 /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6430419A220D3EFA00A0404C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643041A3220D3EFA00A0404C /* XWorkerBeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643041A5220D3EFA00A0404C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643041AE220D3EFA00A0404C /* XWorkerBeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6425F36F225AD3780026D4B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6425F368225AD3780026D4B9 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 6425F36E225AD3780026D4B9 /* PBXContainerItemProxy */;
+		};
+		643041A0220D3EFA00A0404C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64304189220D3EF900A0404C /* XWorkerBee */;
+			targetProxy = 6430419F220D3EFA00A0404C /* PBXContainerItemProxy */;
+		};
+		643041AB220D3EFA00A0404C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64304189220D3EF900A0404C /* XWorkerBee */;
+			targetProxy = 643041AA220D3EFA00A0404C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64304191220D3EF900A0404C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64304192220D3EF900A0404C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64304196220D3EFA00A0404C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64304197220D3EFA00A0404C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6425F371225AD3780026D4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B177FE569A34158718C508 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DEFL2P6EJX;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xep.vn.xworkerbee.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6425F372225AD3780026D4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E8C07FA9DEE91647730513 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DEFL2P6EJX;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xep.vn.xworkerbee.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		643041B0220D3EFA00A0404C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		643041B1220D3EFA00A0404C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		643041B3220D3EFA00A0404C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662CD8581CF42CF62238B07F /* Pods-XWorkerBee.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XWorkerBee/XWorkerBee.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202005031150;
+				DEVELOPMENT_TEAM = DEFL2P6EJX;
+				INFOPLIST_FILE = XWorkerBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"DatePickerDialog\"",
+					"-framework",
+					"\"DropDown\"",
+					"-framework",
+					"\"OneSignal\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast_Swift\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xep.vn.xworkerbee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		643041B4220D3EFA00A0404C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60826C905BFA66C8DF89DB5D /* Pods-XWorkerBee.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XWorkerBee/XWorkerBee.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202005031150;
+				DEVELOPMENT_TEAM = DEFL2P6EJX;
+				INFOPLIST_FILE = XWorkerBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"DatePickerDialog\"",
+					"-framework",
+					"\"DropDown\"",
+					"-framework",
+					"\"OneSignal\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast_Swift\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xep.vn.xworkerbee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		643041B6220D3EFA00A0404C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A3194DA5F7BC4AE926F5A3 /* Pods-XWorkerBeeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XWorkerBeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xep.vn.XWorkerBeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XWorkerBee.app/XWorkerBee";
+			};
+			name = Debug;
+		};
+		643041B7220D3EFA00A0404C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7017A7A45F3D3BA16E6B7184 /* Pods-XWorkerBeeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XWorkerBeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xep.vn.XWorkerBeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XWorkerBee.app/XWorkerBee";
+			};
+			name = Release;
+		};
+		643041B9220D3EFA00A0404C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0694339991C4C2B871FC6BE /* Pods-XWorkerBeeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XWorkerBeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xep.vn.XWorkerBeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XWorkerBee;
+			};
+			name = Debug;
+		};
+		643041BA220D3EFA00A0404C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C284210A6B18689260BABE2 /* Pods-XWorkerBeeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XWorkerBeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xep.vn.XWorkerBeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XWorkerBee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6425F373225AD3780026D4B9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6425F371225AD3780026D4B9 /* Debug */,
+				6425F372225AD3780026D4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64304185220D3EF900A0404C /* Build configuration list for PBXProject "XWorkerBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643041B0220D3EFA00A0404C /* Debug */,
+				643041B1220D3EFA00A0404C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643041B2220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643041B3220D3EFA00A0404C /* Debug */,
+				643041B4220D3EFA00A0404C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643041B5220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643041B6220D3EFA00A0404C /* Debug */,
+				643041B7220D3EFA00A0404C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643041B8220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643041B9220D3EFA00A0404C /* Debug */,
+				643041BA220D3EFA00A0404C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		64E6656D2258A20900C3F5E9 /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				64E6656E2258A20900C3F5E9 /* Data.xcdatamodel */,
+			);
+			currentVersion = 64E6656E2258A20900C3F5E9 /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 64304182220D3EF900A0404C /* Project object */;
+}

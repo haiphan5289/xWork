@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/BadgeSwift/BadgeSwift.framework
+${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework
+${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
+${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
+${BUILT_PRODUCTS_DIR}/MonthYearPicker/MonthYearPicker.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
