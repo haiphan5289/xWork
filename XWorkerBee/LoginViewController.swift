@@ -31,10 +31,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
         //set background image
         SharedClass.sharedInstance.backgroundImage(view: self.view)
         
@@ -71,6 +69,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.btCopy.layer.cornerRadius = 10
 
         self.getKeyChain()
+        
         
     }
     

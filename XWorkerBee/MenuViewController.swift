@@ -169,13 +169,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             //old code: replace self.countView = notifyNumUnread
             if(self.countView > 0){
 //                cell.lblBadge.text = String(notifyNumUnread)
-                cell.lblBadge.text = String(self.countView)
-                cell.lblBadge.isHidden = false
+                cell.lblBadge?.text = String(self.countView)
+                cell.lblBadge?.isHidden = false
             }else{
-                cell.lblBadge.isHidden = true
+                cell.lblBadge?.isHidden = true
             }
         }else{
-            cell.lblBadge.isHidden = true
+            cell.lblBadge?.isHidden = true
         }
         
         return cell

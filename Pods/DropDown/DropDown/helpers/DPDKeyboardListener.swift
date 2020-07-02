@@ -36,12 +36,12 @@ extension KeyboardListener {
 		NotificationCenter.default.addObserver(
 			self,
 			selector: #selector(keyboardWillShow(_:)),
-            name: UIResponder.keyboardWillShowNotification,
+			name: UIResponder.keyboardWillShowNotification,
 			object: nil)
 		NotificationCenter.default.addObserver(
 			self,
 			selector: #selector(keyboardWillHide(_:)),
-            name: UIResponder.keyboardWillHideNotification,
+			name: UIResponder.keyboardWillHideNotification,
 			object: nil)
 	}
 	
@@ -62,7 +62,7 @@ extension KeyboardListener {
 	}
 	
 	fileprivate func keyboardFrame(fromNotification notification: Notification) -> CGRect {
-        return ((notification as NSNotification).userInfo?[UIResponder.keyboardDidChangeFrameNotification] as? NSValue)?.cgRectValue ?? CGRect.zero
+		return ((notification as NSNotification).userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? CGRect.zero
 	}
 	
 }

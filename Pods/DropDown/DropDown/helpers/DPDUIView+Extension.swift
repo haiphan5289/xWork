@@ -44,7 +44,7 @@ internal extension UIWindow {
 			let frontToBackWindows = Array(UIApplication.shared.windows.reversed()) 
 			
 			for window in frontToBackWindows {
-                if window.windowLevel == UIWindow.Level.init(0) {
+				if window.windowLevel == UIWindow.Level.normal {
 					currentWindow = window
 					break
 				}

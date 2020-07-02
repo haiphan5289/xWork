@@ -15,7 +15,7 @@ struct ApiUrl{
 }
 
 struct ApiConfig{
-    static let TIMEOUT_INTERVAL = 10
+    static let TIMEOUT_INTERVAL = 30
 }
 
 public class RequestManager {

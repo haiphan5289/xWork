@@ -37,10 +37,11 @@ class ReportViewController: BaseViewController {
     var yearFormatter = DateFormatter()
     private var countView: Int = 0
     private var arr: [Dictionary<String,Any>] = [Dictionary<String,Any>]()
-    
+    var alert: UIAlertController!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setupAlert()
+        present(alert, animated: true, completion: nil)
         //setup title
         let navView = Utils.configTitleNavBar(navBar: (self.navigationController?.navigationBar)!)
         self.navigationItem.titleView = navView
@@ -88,6 +89,21 @@ class ReportViewController: BaseViewController {
 //        self.detecNextSchedule()
         NotificationCenter.default.addObserver(self, selector: #selector(handleOpenAppFromBG),
                                                name: UIApplication.willEnterForegroundNotification, object: nil)
+        if let _ = UserDefaults.standard.string(forKey: User.COMPANY_NAME){
+            //setupNavigationBar(title: UserDefaults.standard.string(forKey: User.COMPANY_NAME)!)
+            
+            //self.vReport.dropShadow(color: .lightGray, opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+            
+            let date = Date()
+            //lbSelectDate.padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+            lbSelectDate.text = formatter.string(from: date)
+            let tap = UITapGestureRecognizer(target: self, action: #selector(ReportViewController.selectDateClick))
+            lbSelectDate.isUserInteractionEnabled = true
+            lbSelectDate.addGestureRecognizer(tap)
+            
+            self.getReport(month: monthFormatter.string(from: date), year: yearFormatter.string(from: date))
+            self.getReportDetail(month: monthFormatter.string(from: date), year: yearFormatter.string(from: date))
+        }
     }
     
     @objc func handleRefreshTableView1(){
@@ -154,21 +170,21 @@ class ReportViewController: BaseViewController {
 //        self.navigationItem.setRightBarButtonItems([rightBarBtnUser], animated: true)
         
 
-        if let _ = UserDefaults.standard.string(forKey: User.COMPANY_NAME){
-            //setupNavigationBar(title: UserDefaults.standard.string(forKey: User.COMPANY_NAME)!)
-            
-            //self.vReport.dropShadow(color: .lightGray, opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
-            
-            let date = Date()
-            //lbSelectDate.padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-            lbSelectDate.text = formatter.string(from: date)
-            let tap = UITapGestureRecognizer(target: self, action: #selector(ReportViewController.selectDateClick))
-            lbSelectDate.isUserInteractionEnabled = true
-            lbSelectDate.addGestureRecognizer(tap)
-            
-            self.getReport(month: monthFormatter.string(from: date), year: yearFormatter.string(from: date))
-            self.getReportDetail(month: monthFormatter.string(from: date), year: yearFormatter.string(from: date))
-        }
+//        if let _ = UserDefaults.standard.string(forKey: User.COMPANY_NAME){
+//            //setupNavigationBar(title: UserDefaults.standard.string(forKey: User.COMPANY_NAME)!)
+//
+//            //self.vReport.dropShadow(color: .lightGray, opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+//
+//            let date = Date()
+//            //lbSelectDate.padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+//            lbSelectDate.text = formatter.string(from: date)
+//            let tap = UITapGestureRecognizer(target: self, action: #selector(ReportViewController.selectDateClick))
+//            lbSelectDate.isUserInteractionEnabled = true
+//            lbSelectDate.addGestureRecognizer(tap)
+//
+//            self.getReport(month: monthFormatter.string(from: date), year: yearFormatter.string(from: date))
+//            self.getReportDetail(month: monthFormatter.string(from: date), year: yearFormatter.string(from: date))
+//        }
     }
     
 
@@ -194,6 +210,18 @@ class ReportViewController: BaseViewController {
                 }
             return arrtemp
         }
+    }
+    private func setupAlert(){
+        alert = UIAlertController(title: "", message: nil, preferredStyle: .alert)
+        let activies: UIActivityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
+        activies.color = #colorLiteral(red: 0.9556708932, green: 0.4114195704, blue: 0.1716270149, alpha: 1)
+        activies.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        var height:NSLayoutConstraint = NSLayoutConstraint(item: alert.view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 50)
+        alert.view.addConstraint(height)
+        var width:NSLayoutConstraint = NSLayoutConstraint(item: alert.view, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 50)
+        alert.view.addConstraint(width)
+        alert.view.addSubview(activies)
+        activies.startAnimating()
     }
     private func getNotificationList(completion: @escaping ([Dictionary<String,Any>]) -> [Dictionary<String,Any>]){
         self.arr.removeAll()
@@ -235,8 +263,15 @@ class ReportViewController: BaseViewController {
                     self.tb2.reloadData()
                     Utils.loading(self.view, startAnimate: false)
                     self.refreshControlTB2.endRefreshing()
+                    
                 }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.alert.dismiss(animated: true, completion: nil)
+                    
+                }
+                
             } else {
+                self.alert.dismiss(animated: true, completion: nil)
                 let alert: UIAlertController = UIAlertController(title: "Thông báo", message: "Vui lòng thử lại sau", preferredStyle: .alert)
                 let btCancel: UIAlertAction = UIAlertAction(title: "Huỷ", style: .cancel) { _ in
                     self.refreshControlTB2.endRefreshing()
@@ -268,14 +303,14 @@ class ReportViewController: BaseViewController {
                     
                     //                let header = ["Tổng giờ phân công", "Số giờ trể", "Số giờ về sớm", "Số giờ nghỉ có phép", "Số giờ nghỉ không phép", "Tổng giờ làm thực tế"]
                     //                //self.data.append(header)
-                    self.data1.append(["Số lần đi trễ:", String(SoLanDiTre)])
-                    self.data1.append(["Số lần về sớm:", String(SoLanVeSom)])
-                    self.data1.append(["Số ngày nghỉ:",  String(format: fmt, SoNgayNghiPhepNam! + SoNgayNghiPhepThuong! + SoNgayNghiKhongPhep!)])
+                    self.data1.append(["Số ca đi trễ:", String(SoLanDiTre)])
+                    self.data1.append(["Số ca về sớm:", String(SoLanVeSom)])
+                    self.data1.append(["Số ca nghỉ:",  String(format: fmt, SoNgayNghiPhepNam! + SoNgayNghiPhepThuong! + SoNgayNghiKhongPhep!)])
                     self.data1.append(["Tổng giờ làm thực tế:", TongGioLam])
                     self.data1.append(["Tổng số công:", TongSoCong])
                     
                     self.tb1.reloadData()
-                    Utils.loading(self.view, startAnimate: false)
+//                    Utils.loading(self.view, startAnimate: false)
                     self.refreshControlTB1.endRefreshing()
                     //
                     //                let tableStyle = ".tableClass {width: 100%; font-family: Helvetica; font-size: 13px; border-radius: 2px; border-collapse:collapse; border-style: hidden; box-shadow: 0 0 0 1px #c0c0c0}" +

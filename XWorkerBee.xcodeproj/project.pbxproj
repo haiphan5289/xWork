@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34B597D621589A27B02C99D7 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48BEBEACF2FD02E3DF59423 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */; };
-		4C95D9FCEA5AAE4E235EED52 /* Pods_XWorkerBeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1535FF5DE03A2716B9879E11 /* Pods_XWorkerBeeUITests.framework */; };
+		09F735925B4E3CF7C2ECEDCE /* Pods_XWorkerBeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44146F3A3ACB851EB8227760 /* Pods_XWorkerBeeTests.framework */; };
 		52055799236D9A7D00507025 /* NextScheduleOfStaff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52055798236D9A7D00507025 /* NextScheduleOfStaff.swift */; };
 		529D6458245E825700FEC50B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 529D6457245E825700FEC50B /* GoogleService-Info.plist */; };
 		52F0D7462377074F00D4EC11 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0D7442377074F00D4EC11 /* NotificationCell.swift */; };
@@ -49,10 +48,11 @@
 		64E006B922126E9300A897A1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E006B822126E9300A897A1 /* CameraViewController.swift */; };
 		64E6656F2258A20900C3F5E9 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64E6656D2258A20900C3F5E9 /* Data.xcdatamodeld */; };
 		64E665712258A31500C3F5E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E665702258A31500C3F5E9 /* DataManager.swift */; };
+		7966FB84E11F136F01243A14 /* Pods_XWorkerBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BDAC2C6C8A49CE72E85F5B /* Pods_XWorkerBee.framework */; };
+		9152FBB1028720825DB52CDF /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16422D4AD0F8F478CB3D55D6 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */; };
 		93048D71236BDEE300163DF6 /* ExtensionTimePickingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93048D6F236BDEE200163DF6 /* ExtensionTimePickingVC.swift */; };
 		93048D72236BDEE300163DF6 /* TimePickingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93048D70236BDEE200163DF6 /* TimePickingViewController.swift */; };
-		9CA9013A35CD9E10231B1393 /* Pods_XWorkerBeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B57A962CDE16B3F8398E7D2 /* Pods_XWorkerBeeTests.framework */; };
-		E8910B52BD0E412B2F348A5A /* Pods_XWorkerBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E16D3B8D1B0B27708B1652F /* Pods_XWorkerBee.framework */; };
+		D8EC43D1CB5F6FFED80B35A8 /* Pods_XWorkerBeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572A3E0EBF2E665C4CED54DD /* Pods_XWorkerBeeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,15 +94,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1535FF5DE03A2716B9879E11 /* Pods_XWorkerBeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E16D3B8D1B0B27708B1652F /* Pods_XWorkerBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46B177FE569A34158718C508 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee-OneSignalNotificationServiceExtension/Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		16422D4AD0F8F478CB3D55D6 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BDAC2C6C8A49CE72E85F5B /* Pods_XWorkerBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6C2668C3FC207B71DCB69B /* Pods-XWorkerBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee.debug.xcconfig"; path = "Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee.debug.xcconfig"; sourceTree = "<group>"; };
+		44146F3A3ACB851EB8227760 /* Pods_XWorkerBeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52055798236D9A7D00507025 /* NextScheduleOfStaff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScheduleOfStaff.swift; sourceTree = "<group>"; };
 		529D6457245E825700FEC50B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52F0D7442377074F00D4EC11 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		52F0D7452377074F00D4EC11 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
-		58E8C07FA9DEE91647730513 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee-OneSignalNotificationServiceExtension/Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		60826C905BFA66C8DF89DB5D /* Pods-XWorkerBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee.release.xcconfig"; sourceTree = "<group>"; };
+		5425608317A285C02CF7A7A5 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-XWorkerBee-OneSignalNotificationServiceExtension/Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		572A3E0EBF2E665C4CED54DD /* Pods_XWorkerBeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6425F369225AD3780026D4B9 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6425F36B225AD3780026D4B9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		6425F36D225AD3780026D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,15 +148,14 @@
 		64E6656B2258A17700C3F5E9 /* XWorkerBee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XWorkerBee.entitlements; sourceTree = "<group>"; };
 		64E6656E2258A20900C3F5E9 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		64E665702258A31500C3F5E9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		662CD8581CF42CF62238B07F /* Pods-XWorkerBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee.debug.xcconfig"; sourceTree = "<group>"; };
-		6B57A962CDE16B3F8398E7D2 /* Pods_XWorkerBeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C284210A6B18689260BABE2 /* Pods-XWorkerBeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeUITests/Pods-XWorkerBeeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7017A7A45F3D3BA16E6B7184 /* Pods-XWorkerBeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeTests/Pods-XWorkerBeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		76EED573F2C0B6182D2CE71C /* Pods-XWorkerBeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeTests.release.xcconfig"; path = "Target Support Files/Pods-XWorkerBeeTests/Pods-XWorkerBeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		88C434968A81E3E2E40E1179 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-XWorkerBee-OneSignalNotificationServiceExtension/Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		93048D6F236BDEE200163DF6 /* ExtensionTimePickingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTimePickingVC.swift; sourceTree = "<group>"; };
 		93048D70236BDEE200163DF6 /* TimePickingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickingViewController.swift; sourceTree = "<group>"; };
-		B0694339991C4C2B871FC6BE /* Pods-XWorkerBeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeUITests/Pods-XWorkerBeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D6A3194DA5F7BC4AE926F5A3 /* Pods-XWorkerBeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XWorkerBeeTests/Pods-XWorkerBeeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E48BEBEACF2FD02E3DF59423 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B1F72F5E0198024B54C80D /* Pods-XWorkerBeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeUITests.release.xcconfig"; path = "Target Support Files/Pods-XWorkerBeeUITests/Pods-XWorkerBeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9AD808DE5F9D416DE2ECB54 /* Pods-XWorkerBeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeTests.debug.xcconfig"; path = "Target Support Files/Pods-XWorkerBeeTests/Pods-XWorkerBeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDF618206825555E8BA1EADF /* Pods-XWorkerBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBee.release.xcconfig"; path = "Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee.release.xcconfig"; sourceTree = "<group>"; };
+		D585A0A6EEC3F391F52AEA75 /* Pods-XWorkerBeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XWorkerBeeUITests.debug.xcconfig"; path = "Target Support Files/Pods-XWorkerBeeUITests/Pods-XWorkerBeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B597D621589A27B02C99D7 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework in Frameworks */,
+				9152FBB1028720825DB52CDF /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				643CD08A220F2A7100C92C8A /* CoreLocation.framework in Frameworks */,
-				E8910B52BD0E412B2F348A5A /* Pods_XWorkerBee.framework in Frameworks */,
+				7966FB84E11F136F01243A14 /* Pods_XWorkerBee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA9013A35CD9E10231B1393 /* Pods_XWorkerBeeTests.framework in Frameworks */,
+				09F735925B4E3CF7C2ECEDCE /* Pods_XWorkerBeeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,26 +188,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C95D9FCEA5AAE4E235EED52 /* Pods_XWorkerBeeUITests.framework in Frameworks */,
+				D8EC43D1CB5F6FFED80B35A8 /* Pods_XWorkerBeeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A490BD13A9AC03A1316724F /* Pods */ = {
+		40FBD0AEC94088FD3475F5C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				662CD8581CF42CF62238B07F /* Pods-XWorkerBee.debug.xcconfig */,
-				60826C905BFA66C8DF89DB5D /* Pods-XWorkerBee.release.xcconfig */,
-				D6A3194DA5F7BC4AE926F5A3 /* Pods-XWorkerBeeTests.debug.xcconfig */,
-				7017A7A45F3D3BA16E6B7184 /* Pods-XWorkerBeeTests.release.xcconfig */,
-				B0694339991C4C2B871FC6BE /* Pods-XWorkerBeeUITests.debug.xcconfig */,
-				6C284210A6B18689260BABE2 /* Pods-XWorkerBeeUITests.release.xcconfig */,
-				46B177FE569A34158718C508 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				58E8C07FA9DEE91647730513 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */,
+				1D6C2668C3FC207B71DCB69B /* Pods-XWorkerBee.debug.xcconfig */,
+				BDF618206825555E8BA1EADF /* Pods-XWorkerBee.release.xcconfig */,
+				5425608317A285C02CF7A7A5 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				88C434968A81E3E2E40E1179 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */,
+				B9AD808DE5F9D416DE2ECB54 /* Pods-XWorkerBeeTests.debug.xcconfig */,
+				76EED573F2C0B6182D2CE71C /* Pods-XWorkerBeeTests.release.xcconfig */,
+				D585A0A6EEC3F391F52AEA75 /* Pods-XWorkerBeeUITests.debug.xcconfig */,
+				A6B1F72F5E0198024B54C80D /* Pods-XWorkerBeeUITests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		52055797236D9A4900507025 /* Model */ = {
@@ -253,8 +253,8 @@
 				643041AC220D3EFA00A0404C /* XWorkerBeeUITests */,
 				6425F36A225AD3780026D4B9 /* OneSignalNotificationServiceExtension */,
 				6430418B220D3EF900A0404C /* Products */,
-				4A490BD13A9AC03A1316724F /* Pods */,
 				FF16DDE9AD916D06554BEF6C /* Frameworks */,
+				40FBD0AEC94088FD3475F5C4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -383,10 +383,10 @@
 			isa = PBXGroup;
 			children = (
 				643CD089220F2A7000C92C8A /* CoreLocation.framework */,
-				1E16D3B8D1B0B27708B1652F /* Pods_XWorkerBee.framework */,
-				6B57A962CDE16B3F8398E7D2 /* Pods_XWorkerBeeTests.framework */,
-				1535FF5DE03A2716B9879E11 /* Pods_XWorkerBeeUITests.framework */,
-				E48BEBEACF2FD02E3DF59423 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */,
+				18BDAC2C6C8A49CE72E85F5B /* Pods_XWorkerBee.framework */,
+				16422D4AD0F8F478CB3D55D6 /* Pods_XWorkerBee_OneSignalNotificationServiceExtension.framework */,
+				44146F3A3ACB851EB8227760 /* Pods_XWorkerBeeTests.framework */,
+				572A3E0EBF2E665C4CED54DD /* Pods_XWorkerBeeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6425F373225AD3780026D4B9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				25EBA14F4F7EA7592584A9A0 /* [CP] Check Pods Manifest.lock */,
+				128F92D7199F65247ABF1C82 /* [CP] Check Pods Manifest.lock */,
 				6425F365225AD3780026D4B9 /* Sources */,
 				6425F366225AD3780026D4B9 /* Frameworks */,
 				6425F367225AD3780026D4B9 /* Resources */,
@@ -416,12 +416,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 643041B2220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBee" */;
 			buildPhases = (
-				85D18A503644638F0954DAB5 /* [CP] Check Pods Manifest.lock */,
+				5D0E2B1F93463464775FC4CF /* [CP] Check Pods Manifest.lock */,
 				64304186220D3EF900A0404C /* Sources */,
 				64304187220D3EF900A0404C /* Frameworks */,
 				64304188220D3EF900A0404C /* Resources */,
-				28808B17DC139C2382BF59D8 /* [CP] Embed Pods Frameworks */,
 				6473FD922259CC9D00A72A49 /* Embed App Extensions */,
+				527F27A3248FC8370090406F /* ShellScript */,
+				5D9744316C6C1D3BB65C59C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,7 +438,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 643041B5220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBeeTests" */;
 			buildPhases = (
-				2E61E445AABE3BEE1B0DB940 /* [CP] Check Pods Manifest.lock */,
+				446B1FC265EC8FC188757EBA /* [CP] Check Pods Manifest.lock */,
 				6430419A220D3EFA00A0404C /* Sources */,
 				6430419B220D3EFA00A0404C /* Frameworks */,
 				6430419C220D3EFA00A0404C /* Resources */,
@@ -456,7 +457,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 643041B8220D3EFA00A0404C /* Build configuration list for PBXNativeTarget "XWorkerBeeUITests" */;
 			buildPhases = (
-				8D9FD7A21C30C05F77AB133C /* [CP] Check Pods Manifest.lock */,
+				08813C5DDA32DD05053F3F10 /* [CP] Check Pods Manifest.lock */,
 				643041A5220D3EFA00A0404C /* Sources */,
 				643041A6220D3EFA00A0404C /* Frameworks */,
 				643041A7220D3EFA00A0404C /* Resources */,
@@ -566,7 +567,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25EBA14F4F7EA7592584A9A0 /* [CP] Check Pods Manifest.lock */ = {
+		08813C5DDA32DD05053F3F10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XWorkerBeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		128F92D7199F65247ABF1C82 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -588,24 +611,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		28808B17DC139C2382BF59D8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E61E445AABE3BEE1B0DB940 /* [CP] Check Pods Manifest.lock */ = {
+		446B1FC265EC8FC188757EBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -627,7 +633,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85D18A503644638F0954DAB5 /* [CP] Check Pods Manifest.lock */ = {
+		527F27A3248FC8370090406F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${XWorkerBee}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		5D0E2B1F93463464775FC4CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -649,26 +674,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8D9FD7A21C30C05F77AB133C /* [CP] Check Pods Manifest.lock */ = {
+		5D9744316C6C1D3BB65C59C3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-XWorkerBeeUITests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XWorkerBee/Pods-XWorkerBee-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -779,7 +799,7 @@
 /* Begin XCBuildConfiguration section */
 		6425F371225AD3780026D4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46B177FE569A34158718C508 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = 5425608317A285C02CF7A7A5 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -801,7 +821,7 @@
 		};
 		6425F372225AD3780026D4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58E8C07FA9DEE91647730513 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 88C434968A81E3E2E40E1179 /* Pods-XWorkerBee-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -856,7 +876,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -943,7 +963,7 @@
 		};
 		643041B3220D3EFA00A0404C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 662CD8581CF42CF62238B07F /* Pods-XWorkerBee.debug.xcconfig */;
+			baseConfigurationReference = 1D6C2668C3FC207B71DCB69B /* Pods-XWorkerBee.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -951,7 +971,7 @@
 				CODE_SIGN_ENTITLEMENTS = XWorkerBee/XWorkerBee.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 202005031150;
+				CURRENT_PROJECT_VERSION = 202006221220;
 				DEVELOPMENT_TEAM = DEFL2P6EJX;
 				INFOPLIST_FILE = XWorkerBee/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -959,7 +979,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.3;
+				MARKETING_VERSION = 3.0.7;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -990,7 +1010,7 @@
 		};
 		643041B4220D3EFA00A0404C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60826C905BFA66C8DF89DB5D /* Pods-XWorkerBee.release.xcconfig */;
+			baseConfigurationReference = BDF618206825555E8BA1EADF /* Pods-XWorkerBee.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -998,7 +1018,7 @@
 				CODE_SIGN_ENTITLEMENTS = XWorkerBee/XWorkerBee.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 202005031150;
+				CURRENT_PROJECT_VERSION = 202006221220;
 				DEVELOPMENT_TEAM = DEFL2P6EJX;
 				INFOPLIST_FILE = XWorkerBee/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1006,7 +1026,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.3;
+				MARKETING_VERSION = 3.0.7;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1037,7 +1057,7 @@
 		};
 		643041B6220D3EFA00A0404C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A3194DA5F7BC4AE926F5A3 /* Pods-XWorkerBeeTests.debug.xcconfig */;
+			baseConfigurationReference = B9AD808DE5F9D416DE2ECB54 /* Pods-XWorkerBeeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1058,7 +1078,7 @@
 		};
 		643041B7220D3EFA00A0404C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7017A7A45F3D3BA16E6B7184 /* Pods-XWorkerBeeTests.release.xcconfig */;
+			baseConfigurationReference = 76EED573F2C0B6182D2CE71C /* Pods-XWorkerBeeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1079,7 +1099,7 @@
 		};
 		643041B9220D3EFA00A0404C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0694339991C4C2B871FC6BE /* Pods-XWorkerBeeUITests.debug.xcconfig */;
+			baseConfigurationReference = D585A0A6EEC3F391F52AEA75 /* Pods-XWorkerBeeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1099,7 +1119,7 @@
 		};
 		643041BA220D3EFA00A0404C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C284210A6B18689260BABE2 /* Pods-XWorkerBeeUITests.release.xcconfig */;
+			baseConfigurationReference = A6B1F72F5E0198024B54C80D /* Pods-XWorkerBeeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

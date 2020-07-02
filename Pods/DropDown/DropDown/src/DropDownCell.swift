@@ -68,7 +68,7 @@ extension DropDownCell {
 			executeSelection()
 		}
 
-        accessibilityTraits = selected ? UIAccessibilityTraits.adjustable : UIAccessibilityTraits.none
+		accessibilityTraits = selected ? .selected : .none
 	}
 	
 }

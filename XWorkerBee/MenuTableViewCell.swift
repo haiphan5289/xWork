@@ -11,7 +11,7 @@ import BadgeSwift
 
 class MenuTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lblBadge: BadgeSwift!
+    @IBOutlet weak var lblBadge: BadgeSwift?
     @IBOutlet weak var lblMenuTitle: UILabel!
     @IBOutlet weak var imgMenuIcon: UIImageView!
     override func awakeFromNib() {

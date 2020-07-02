@@ -42,7 +42,7 @@ class TimePickingViewController: BaseViewController, CLLocationManagerDelegate {
     
     var refreshControl = UIRefreshControl()
     //var btnCheckInOut: UIButton!
-    var locationManager: CLLocationManager!
+    var locationManager: CLLocationManager?
     var currentLocation: CLLocationCoordinate2D!
     
     var checkInOutStatus: Int!
@@ -210,10 +210,10 @@ class TimePickingViewController: BaseViewController, CLLocationManagerDelegate {
         if (CLLocationManager.locationServicesEnabled())
         {
             locationManager = CLLocationManager()
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.requestAlwaysAuthorization()
-            locationManager.startUpdatingLocation()
+            locationManager?.delegate = self
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager?.requestAlwaysAuthorization()
+            locationManager?.startUpdatingLocation()
         }
         
         //determine check in or check out
@@ -260,10 +260,11 @@ class TimePickingViewController: BaseViewController, CLLocationManagerDelegate {
 //            }
 //        }
 //    }
+    //
     
     override func viewDidDisappear(_ animated: Bool) {
         Utils.loading(self.view, startAnimate: false)
-        locationManager.stopUpdatingLocation()
+        locationManager?.stopUpdatingLocation()
     }
     private func setupAnalytic() {
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
@@ -667,6 +668,7 @@ class TimePickingViewController: BaseViewController, CLLocationManagerDelegate {
                             self.alert.dismiss(animated: true, completion: {
                                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                                 let cvc = storyBoard.instantiateViewController(withIdentifier: "idCameraVC") as! CameraViewController
+                                cvc.modalPresentationStyle = .fullScreen
                                 cvc.camDelegate = self
                                 self.present(cvc, animated: true, completion: nil)
                             })
